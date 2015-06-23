@@ -2,11 +2,12 @@ extends ../layout
 
 block content
   h1 Add A Puppy
+  include ../../includes/arrayloopage
   form(action='/puppies/new', method='post')
     label(for='name') Name
     p
-      input#name(type='text', name='puppyName', required)
-    label(for='puppyID') Puppy ID
+      input#name(type='text', name='puppyName')
+    label(for='puppyID') Puppy ID (must be 3 characters or more in length)
     p
-      input#puppyID(type='text', name='puppyIdent', required)
+      input#puppyID(type='text', name='puppyIdent')
     input(type='submit', value='Create Puppy')

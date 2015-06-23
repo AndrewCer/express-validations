@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+  h1 Showing People
+  table
+    thead
+      tr
+        th Name
+        th Hobby
+    tbody
+      for person in allPeople
+        tr
+          td= person.persName 
+          td= person.persHobby
+  

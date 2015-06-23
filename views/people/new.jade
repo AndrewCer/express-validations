@@ -1,0 +1,13 @@
+extends ../layout
+
+block content
+  h1 Add A Person
+  include ../../includes/arrayloopage
+  form(action='/people/new', method='post')
+    label(for='name') Name
+    p
+      input#name(type='text', name='personName')
+    label(for='hobby') Hobby
+    p
+      input#hobby(type='text', name='personHobby')
+    input(type='submit', value='Create Person')

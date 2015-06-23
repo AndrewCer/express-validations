@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  h1 Add A Puppy
+  form(action='/puppies/new', method='post')
+    label(for='name') Name
+    p
+      input#name(type='text', name='puppyName', required)
+    label(for='puppyID') Puppy ID
+    p
+      input#puppyID(type='text', name='puppyIdent', required)
+    input(type='submit', value='Create Puppy')

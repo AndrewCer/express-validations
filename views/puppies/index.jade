@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+  h1 Showing Puppies
+  table
+    thead
+      tr
+        th Name
+        th ID
+    tbody
+      for pup in allPups
+        tr
+          td= pup.pupName 
+          td= pup.pupIdent
+  
